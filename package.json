@@ -1,0 +1,17 @@
+{
+  "name": "node-mojang-status-checker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "JMimosaDev (https://github.com/JMimosaDev)",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^11.1.1"
+  },
+  "dependencies": {
+    "electron-packager": "^15.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}

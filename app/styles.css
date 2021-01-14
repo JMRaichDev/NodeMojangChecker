@@ -1,0 +1,47 @@
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+	font-family: 'BariolRegularFont', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}
+
+body p {
+	font-size: 70%;
+}
+
+body h2 {
+	color: rgb(92, 92, 92);
+}
+
+.green span {
+	color: green;
+}
+
+.yellow span {
+	color: yellow;
+}
+
+.red span {
+	color: red;
+}
+
+.grey span {
+	color: grey;
+}
+
+@font-face {
+	font-family: "BariolRegularFont";
+	src: url("fonts/bariol_regular-webfont.eot");
+	src: url("fonts/bariol_regular-webfont.woff") format("woff"),
+	url("fonts/bariol_regular-webfont.otf") format("opentype"),
+	url("fonts/bariol_regular-webfont.svg#filename") format("svg");
+}
