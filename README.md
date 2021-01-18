@@ -24,10 +24,9 @@
 
 ---
 
-**Build Installers**
+**Build**
 
 To build for your current platform.
-
 ```console
 > npm install electron-packager -g
 > npm electron-packager .
