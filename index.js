@@ -17,7 +17,6 @@ async function createGui() {
 	win.loadFile('app/index.html');
 
     win.webContents.on('did-finish-load', ()=>{
-    	win.setTitle("Hey");
     	for(let i=0; i<statuses.length; i++){
     		const service = statuses[i]
 

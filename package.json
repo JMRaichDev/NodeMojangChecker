@@ -1,17 +1,34 @@
 {
   "name": "node-mojang-status-checker",
   "version": "1.0.0",
-  "main": "index.js",
+  "productName": "NodeJS Mojang Status Checker",
+  "description": "A basic NodeJS app to see current Mojang's services status.",
   "author": "JMimosaDev (https://github.com/JMimosaDev)",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/JMimosaDev/NodeMojangChecker#readme",
+  "bugs": {
+    "url": "https://github.com/JMimosaDev/NodeMojangChecker/issues"
+  },
+  "private": true,
+  "main": "index.js",
   "scripts": {
     "start": "electron ."
   },
-  "devDependencies": {
-    "electron": "^11.1.1"
-  },
   "dependencies": {
-    "electron-packager": "^15.2.0",
     "express": "^4.17.1",
     "request": "^2.88.2"
-  }
+  },
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-packager": "^15.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMimosaDev/NodeMojangChecker.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mojang",
+    "mojang-status"
+  ]
 }
