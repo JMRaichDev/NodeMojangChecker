@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "productName": "NodeJS Mojang Status Checker",
   "description": "A basic NodeJS app to see current Mojang's services status.",
-  "author": "JMimosaDev (https://github.com/JMimosaDev)",
+  "author": "JMRaichDev (https://github.com/JMRaichDev)",
   "license": "UNLICENSED",
   "homepage": "https://github.com/JMimosaDev/NodeMojangChecker#readme",
   "bugs": {
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JMimosaDev/NodeMojangChecker.git"
+    "url": "git+https://github.com/JMRaichDev/NodeMojangChecker.git"
   },
   "keywords": [
     "nodejs",
