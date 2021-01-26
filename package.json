@@ -5,9 +5,9 @@
   "description": "A basic NodeJS app to see current Mojang's services status.",
   "author": "JMRaichDev (https://github.com/JMRaichDev)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/JMimosaDev/NodeMojangChecker#readme",
+  "homepage": "https://github.com/JMRaichDev/NodeMojangChecker#readme",
   "bugs": {
-    "url": "https://github.com/JMimosaDev/NodeMojangChecker/issues"
+    "url": "https://github.com/JMRaichDev/NodeMojangChecker/issues"
   },
   "private": true,
   "main": "index.js",
