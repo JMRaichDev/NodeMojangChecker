@@ -9,7 +9,7 @@
 **Clone and Install Dependencies**
 
 ```console
-> git clone https://github.com/JMimosaDev/NodeMojangChecker.git
+> git clone https://github.com/JMRaichDev/NodeMojangChecker.git
 > cd NodeMojangChecker
 > npm install
 ```
