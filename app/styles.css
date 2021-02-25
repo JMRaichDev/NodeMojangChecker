@@ -14,28 +14,8 @@ body {
 	font-style:normal;
 }
 
-body p {
-	font-size: 70%;
-}
-
 body h2 {
 	color: rgb(92, 92, 92);
-}
-
-.green span {
-	color: green;
-}
-
-.yellow span {
-	color: yellow;
-}
-
-.red span {
-	color: red;
-}
-
-.grey span {
-	color: grey;
 }
 
 @font-face {

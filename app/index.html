@@ -2,24 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Node Mojang Status Checker</title>
     <script>
-        function addElement( type, className, innerHTML ) {
-            var element = document.createElement(type);
-            element.innerHTML = innerHTML;
-            element.className = className;
+        function addService( serviceName, serviceStatus ) {
+            var element = document.createElement("H2");
+            element.innerHTML = `The service : ${serviceName} is `;
+
+            var span = document.createElement("SPAN");
+            span.innerHTML = `${serviceStatus}`;
+            span.style = `color: ${serviceStatus}`;
+
+            element.appendChild(span);
+
             document.body.appendChild(element);
         }
     </script>
 </head>
 <body style="background: white;">
     <h1>Mojang Auth Services :</h1>
-    <p>
-        We are using node <script>document.write(process.versions.node)</script>,
-        Chrome <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
-    </p>
 </body>
 </html>
