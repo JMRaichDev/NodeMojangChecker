@@ -2,32 +2,32 @@ const { app, BrowserWindow } = require('electron');
 const Mojang = require('./app/js/mojang.js');
 
 async function createGui() {
-	const statuses = await Mojang.status();
-	const win = new BrowserWindow({
-		width: 800,
-		height: 600,
-		webPreferences: {
+  const statuses = await Mojang.status();
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
 	      	contextIsolation: true, // TODO: Remove it : enabled by default in Electron v12
 	      	enableRemoteModule: false, // turn off remote
 	        disableBlinkFeatures: 'Auxclick'
-		}
-	});
+    }
+  });
 
-	win.setMenuBarVisibility(false);
-	win.loadFile('app/index.html');
+  win.setMenuBarVisibility(false);
+  win.loadFile('app/index.html');
 
     win.webContents.on('did-finish-load', ()=>{
-    	for(let i=0; i<statuses.length; i++){
-    		const service = statuses[i];
+      for(let i=0; i<statuses.length; i++){
+        const service = statuses[i];
 
-				// Mojang API is broken for sessionserver. https://bugs.mojang.com/browse/WEB-2303
+        // Mojang API is broken for sessionserver. https://bugs.mojang.com/browse/WEB-2303
         if(service.service === 'sessionserver.mojang.com') {
-						service.status = 'green';
+            service.status = 'green';
         }
 
-				let code = `addService("${service.name}", "${service.status}")`;
+        let code = `addService("${service.name}", "${service.status}")`;
 
-				win.webContents.executeJavaScript(code);
+        win.webContents.executeJavaScript(code);
     	}
 	});
 }
