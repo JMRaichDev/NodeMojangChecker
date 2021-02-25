@@ -20,7 +20,7 @@ async function createGui() {
     	for(let i=0; i<statuses.length; i++){
     		const service = statuses[i];
 
-			// Mojang API is broken for sessionserver. https://bugs.mojang.com/browse/WEB-2303
+				// Mojang API is broken for sessionserver. https://bugs.mojang.com/browse/WEB-2303
         if(service.service === 'sessionserver.mojang.com') {
 						service.status = 'green';
         }
