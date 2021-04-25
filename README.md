@@ -27,7 +27,8 @@
 **Build**
 
 To build for your current platform.
+*Run Node.js Console*
 ```console
 > npm install electron-packager -g
-> npm electron-packager .
+> electron-packager .
 ```
