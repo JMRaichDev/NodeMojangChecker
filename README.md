@@ -1,3 +1,6 @@
+## [ARCHIVED] NodeMojanChecker
+A basic app to check mojang servers status
+
 ### Getting Started
 
 **System Requirements**
